@@ -17,29 +17,7 @@
                 <img class="img-fluid max-width: 100% height: auto" src="./avatar.jpg" alt="Avatar">`
                 <div class="card">
                     <h2 class="card-title">Datos Personales</h2>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td> Código </td>                       
-                                <td> 201921729 </td>      
-                            </tr>
-                            <tr>
-                                <td>Cédula</td>
-                                <td>1000184082</td>
-                            </tr>
-                            <tr>
-                                <td>Edad</td>
-                                <td>18 Años</td>
-                            </tr>
-                            <tr>
-                                <td>Dirección</td>
-                                <td>Boyacá con 167</td>
-                            </tr>
-                            <tr>
-                                <td>Teléfono</td>
-                                <td>3208086973</td>
-                            </tr>
-                        </tbody>
+                    <table class = "table" id = "student">                        
                     </table>
                 </div>
             </div>
@@ -56,6 +34,19 @@
                             </div>
                         </div>
                     </form>
+                    <form style="margin:10px;">
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" id="search-box2.1"
+                                    placeholder="Filtrar por num creditos (low)">
+                                <input type="text" class="form-control" id="search-box2.2"
+                                    placeholder="Filtrar por num creditos (high)">
+                            </div>
+                            <div class="col">
+                                <button type="button" id="button-filterByCredits" class="btn btn-success">Aplicar</button>
+                            </div>
+                        </div>
+                    </form>
                     <h2 class="card-title">Cursos Actuales</h2>
                     <table class="table">
                         <thead class="thead-dark">
@@ -67,6 +58,8 @@
                         </thead>
                         <tbody id="courses">
                         </tbody>
+                    </table>
+                    <p id = 'total-credits' class="text-white bg-dark"></p>
                 </div>
             </div>
         </div>
